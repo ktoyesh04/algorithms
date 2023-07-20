@@ -15,7 +15,6 @@ public class MergeSort {
         int r[] = new int[n-mid];
         for(int i=0;i<mid;i++) l[i]=a[i];
         for(int i=mid;i<n;i++) r[i-mid]=a[i];
-        System.out.println("In sort a: "+Arrays.toString(a)+" l: "+Arrays.toString(l)+" r: "+Arrays.toString(r));
         mergeSort(l, mid);
         mergeSort(r, n-mid);
         merge(a,l,r,mid, n-mid);
